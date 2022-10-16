@@ -1,12 +1,13 @@
 * {font-family: Arial, Verdana, sans-serif; 
-  color: #665544; 
+  color: #66554; 
   text-align: center;
 }
 
 body {
   width: 90%;
   margin: 0 auto;
-  background-image:url("EuropeanBatNightEuclidean.png"):
+  background-image: url("images/EuropeanBlackBatNightEuclidean.png");
+  
 }
 
 #content {overflow: auto;
@@ -27,11 +28,45 @@ li {display: inline;
   padding: 0.5em;
 }
 
-#nav, #footer {background-color: #efefef;
+#nav, #footer {background-color: #FFA500;
   padding: 0.5em 0;
 }
 
 #feature, .article {height: 10em;
   margin-bottom: 1em;
-  background-color: #efefef;
 }
+
+#nav {background-color: #7FFF00 ;
+}
+
+#feature {background-color: #98FB98;
+}
+.column1 {background-color: #00FF7F;
+}
+
+.column2 {background-color: #00FA9A;
+}
+
+.column3 {background-color: #32CD32;
+}
+
+#footer {background-color: #00FF00;
+}
+
+img.align-right {  
+  float: right;
+  margin-right:10px;
+}
+img.small{
+  height:120px;
+}
+
+H1 {
+   font-family: 'TimesGothic';
+   font-weight: normal;
+   font-style: normal;
+   color: white;
+} 
+
+
+
