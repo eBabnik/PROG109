@@ -1,12 +1,12 @@
-var table = 3;             // Unit of table
-var operator = 'addition'; // Type of calculation
+var table = prompt("Please enter a number from 0 - 10");             // Unit of table
+var operator = 'multiplication'; // Type of calculation
 var i = 1;                 // Set counter to 1
 var msg = '';              // Message
 
-if (operator === 'addition') {
-  // Do addition
+if (operator === 'multiplication') {
+  // Do multiplication
   while (i < 11) {
-    msg += i + ' + ' + table + ' = ' + (i + table) + '<br />';
+    msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
     i++;
   }
 } else {
