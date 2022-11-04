@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding-left: 0;
     padding-top: 50px;
-    background-image: url("https://ebabnik.github.io/PROG109/portfolio/images/pexels-pixabay-163822.png");
+    background-image: url("https://ebabnik.github.io/PROG109/portfolio/images/pexels-jess-bailey-designs-743986");
     background-position: left top;
     font-size: 16px;
     color: #333333;
@@ -12,6 +12,7 @@ body {
     text-align: justify;
     font-family: Ebrima;
   }
+  
   h1 {
     font-size: 35pt;
     font-family: Ebrima;
