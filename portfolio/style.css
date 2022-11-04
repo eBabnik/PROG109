@@ -78,7 +78,7 @@ body {
     color: #eeeeee;
     width: 5em;
     text-decoration: none;
-    float: left;
+    float: none;
     
   }
   div#nav li a:hover {
