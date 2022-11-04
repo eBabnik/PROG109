@@ -115,4 +115,7 @@ body {
     margin-top: 0.5em;
     font-family: Ebrima;
   }
+  ul.a {
+    list-style-type: square;
+  }
   
