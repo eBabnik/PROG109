@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding-left: 0;
     padding-top: 50px;
-    background-image: url(../images/bg.jpg);
+    background-image: url("https://ebabnik.github.io/PROG109/portfolio/images/pexels-pixabay-163822.png");
     background-position: left top;
     font-size: 16px;
     color: #333333;
@@ -29,7 +29,7 @@ body {
     border: 5px solid #cccccc;
     margin: auto;
     padding: 1em;
-    width: 50%;
+    width: 940px;
     background-color: #cccccc;
     font-family: Ebrima;
   }
@@ -78,6 +78,7 @@ body {
     width: 5em;
     text-decoration: none;
     float: left;
+    
   }
   div#nav li a:hover {
     padding: 4px 2px 2px;
@@ -108,7 +109,7 @@ body {
     background-color: silver;
     text-align: center;
     margin-right: auto;
-    width: 52%;
+    width: 962px;
     margin-left: auto;
     margin-top: 0.5em;
     font-family: Ebrima;
