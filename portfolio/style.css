@@ -6,7 +6,7 @@ body {
     background-image: url("https://ebabnik.github.io/PROG109/portfolio/images/pexels-min-an-1353938.jpg");
     background-position: left top;
     font-size: 16px;
-    color: #333333;
+    color: #ffffff;
     line-height: 24px;
     font-weight: inherit;
     text-align: justify;
@@ -25,19 +25,20 @@ body {
     text-align: center;
     font-size: 44px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
   }
   div#wrap {
-    border: 5px solid #cccccc;
+    border: 5px solid c#F8F8FF;
     margin: auto;
     padding: 1em;
     width: 940px;
-    background-color: #cccccc;
+    background-color: #F8F8FF;
     font-family: Arial, Helvetica, sans-serif;
   }
   div#header {
     padding: 1em;
     color: #ffffff;
-    background-color: #666666;
+    background-color: #34282C;
     margin-bottom: 0.5em;
     background-image: url(../images/bg.jpg);
   }
@@ -53,12 +54,12 @@ body {
     font-family:  Arial, Helvetica, sans-serif;
   }
   div#nav {
-    color: #eeeeee;
+    color: #ffffff;
     width: 100%;
     position: relative;
     text-align: center;
     margin-bottom: 0.5em;
-    background-color: #5b9ace;
+    background-color: #2B547E;
     float: right;
     display: block;
   }
@@ -75,7 +76,7 @@ body {
   }
   div#nav li a {
     padding: 5px;
-    color: #eeeeee;
+    color: #ffffff;
     width: 5em;
     text-decoration: none;
     float: none;
@@ -84,17 +85,17 @@ body {
   div#nav li a:hover {
     padding: 4px 2px 2px;
     background-image: url(images/bg.jpg);
-    color: #eeeeee;
+    color: #ffffff;
   }
   div#content {
     padding: 2em 1em;
   }
   div#content h2 {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #F8F8FF;
     margin-bottom: 0.5em;
   }
   div#content img.fancy {
-    border: 1px solid #dddddd;
+    border: 1px solid #F8F8FF;
     padding: 0.5em;
   }
   div#content img.left {
@@ -107,7 +108,7 @@ body {
   }
   div#footer {
     padding: 10px;
-    background-color: silver;
+    background-color: #34282C;
     text-align: center;
     margin-right: auto;
     width: 962px;
