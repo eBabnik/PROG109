@@ -6,7 +6,7 @@ body {
     background-image: url("https://ebabnik.github.io/PROG109/portfolio/images/pexels-min-an-1353938.jpg");
     background-position: left top;
     font-size: 16px;
-    color: #3A3B3C;
+    color: #333333;
     line-height: 24px;
     font-weight: inherit;
     text-align: justify;
@@ -27,16 +27,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   div#wrap {
-    border: 5px solid #F8F8FF;
+    border: 5px solid #cccccc;
     margin: auto;
     padding: 1em;
     width: 940px;
-    background-color: #F8F8FF;
+    background-color: #cccccc;
     font-family: Arial, Helvetica, sans-serif;
   }
   div#header {
     padding: 1em;
-    color: #F8F8FF;
+    color: #ffffff;
     background-color: #666666;
     margin-bottom: 0.5em;
     background-image: url(../images/bg.jpg);
@@ -45,12 +45,12 @@ body {
     margin: 0;
     padding: 0;
     font-size: 50px;
-    font-family: MS PGothic;
+    font-family: Arial, Helvetica, sans-serif;
   }
   div#header h2 {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  Arial, Helvetica, sans-serif;
   }
   div#nav {
     color: #eeeeee;
