@@ -14,6 +14,11 @@
   
   float: left;
   }
+  
   .clear {
   clear: both;
+  }
+  
+  .space{
+    color:white
   }
