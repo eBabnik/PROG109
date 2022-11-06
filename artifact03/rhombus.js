@@ -5,11 +5,12 @@
 
 function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
 upRight(pHeight, pColorEven, pColorOdd, pSymbol);
+upLeft(pHeight, pColorEven, pColorOdd, pSymbol);
 downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 
 }
 
-function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
+function upLeft(pHeight, pColorEven, pColorOdd, pSymbol){
 var rLine ="";
 for (i=0;i<pHeight;i++){
 rLine +="<p>";
@@ -30,8 +31,6 @@ rLine +="</p>";
 
 }
 
-document.getElementById("upRight").innerHTML = rLine;
+document.getElementById("upLeft").innerHTML = rLine;
 }
 
-
-}
