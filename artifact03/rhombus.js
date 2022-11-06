@@ -64,7 +64,8 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
 
         //Fill in the left side of every row wit hspaces or blanks
         for(x=1;x<pHeight-i;x++){   
-            rLine +=" ";         
+            rLine +=" ";    
+            //rLine +="<span class='space'>" + pSymbol + "</span>"
         }  
 
 
