@@ -78,6 +78,6 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
         
         }
         
-        document.getElementById("upRight").innerHTML = rLine;
+        document.getElementById("upLeft").innerHTML = rLine;
         }
 
