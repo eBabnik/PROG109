@@ -1,4 +1,4 @@
-/ var rHeight =5;
+// var rHeight =5;
 // var colorEven = "orange";
 // var colorOdd = "black";
 // var symbol ="*";
@@ -10,7 +10,7 @@ downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 
 }
 
-function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
+function upLeft(pHeight, pColorEven, pColorOdd, pSymbol){
     var rLine ="";
     for (i=0;i<pHeight;i++){
     rLine +="<p>";
@@ -31,6 +31,6 @@ function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
     
     }
     
-    document.getElementById("upRight").innerHTML = rLine;
+    document.getElementById("upLeft").innerHTML = rLine;
     }
 
