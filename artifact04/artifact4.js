@@ -15,6 +15,7 @@ function firstName(){
     var validFirstname=false;
     var validLastname=false;
     var validEmail=false;
+    var validPhone=false;
   
 
     //2) read value from HTML
@@ -23,6 +24,7 @@ function firstName(){
     var userEmail = document.getElementById("Email").value;
     var atpos = userEmail.indexOf("@");
     var dotpos = userEmail.lastIndexOf(".");
+    var phone = document.getElementById("Phone").value;
     var errorMessages = "";
 
     //3) Do validation
@@ -55,6 +57,16 @@ function firstName(){
                 validEmail = true;
                 console.log("Email valid")
         };  
+  
+    if (isNaN(phone) || phone.lenght >15 || phone===null || phone===""){
+        errorMessages += "<p>Invalid Phone number</p>";
+        console.log("phone invalid")
+        } else {
+                validPhone = true;
+                console.log("Phone valid")
+        };         
+      
+
     
     //4) Send error message to HTML
     document.getElementById("fname").innerHTML = errorMessages;
