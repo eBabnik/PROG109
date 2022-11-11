@@ -19,6 +19,7 @@ function firstName(){
     var validUsername=false;
     var validPassword=false;
     var validAddress=false;
+    var validCity=false;
   
 
     //2) read value from HTML
@@ -32,6 +33,7 @@ function firstName(){
     var username = document.getElementById("UserName").value;
     var password = document.getElementById("Password").value;
     var address = document.getElementById("Address").value;
+    var city = document.getElementById("City").value;
     
 
     //3) Do validation
@@ -89,12 +91,12 @@ function firstName(){
                 console.log("Password valid")
         }; 
   
-    if (address==="null" || address==="" || address.length > 0 ) {
-        errorMessages += "<p>The address is required</p>";
-        console.log("Address invalid")
+    if (city==="null" || city==="" || city.length > 0 ) {
+        errorMessages += "<p>The city is required</p>";
+        console.log("City invalid")
         } else {
-                validAddress = true;
-                console.log("Address valid")
+                validCity = true;
+                console.log("City valid")
         }; 
       
 
@@ -104,5 +106,7 @@ function firstName(){
     
 
     //5) return status of each field
-    return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress);
+    return (validFirstname && validLastname && validEmail && 
+            validPhone && validUsername && validPassword && 
+            validAddress && validCity);
 };
