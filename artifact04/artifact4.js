@@ -16,6 +16,7 @@ function firstName(){
     var validLastname=false;
     var validEmail=false;
     var validPhone=false;
+    var validUsername=false;
   
 
     //2) read value from HTML
@@ -25,6 +26,7 @@ function firstName(){
     var atpos = userEmail.indexOf("@");
     var dotpos = userEmail.lastIndexOf(".");
     var phone = document.getElementById("Phone").value;
+    var username = document.getElementById("UserName").value;
     var errorMessages = "";
 
     //3) Do validation
@@ -64,7 +66,15 @@ function firstName(){
         } else {
                 validPhone = true;
                 console.log("Phone valid")
-        };         
+        };  
+  
+     if (username==="null" || username==="" || username.length > 12 ) {
+        errorMessages += "<p>The user name is required</p>";
+        console.log("User name invalid")
+        } else {
+                validUsername = true;
+                console.log("User name valid")
+        };  
       
 
     
