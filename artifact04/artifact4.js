@@ -9,7 +9,7 @@ function validateForm() {
         return false;
 }
  
-FirstName.addEventListener('blur', firstName, false);
+
 function firstName(){
     //1) Create variable
     var validFirstname=false;
@@ -18,6 +18,7 @@ function firstName(){
     var validPhone=false;
     var validUsername=false;
     var validPassword=false;
+    var validAddress=false;
   
 
     //2) read value from HTML
@@ -30,6 +31,7 @@ function firstName(){
     var phone = document.getElementById("Phone").value;
     var username = document.getElementById("UserName").value;
     var password = document.getElementById("Password").value;
+    var address = document.getElementById("Address").value;
     
 
     //3) Do validation
@@ -85,7 +87,15 @@ function firstName(){
         } else {
                 validPassword = true;
                 console.log("Password valid")
-        };  
+        }; 
+  
+    if (address==="null" || address==="" || address.length > 0 ) {
+        errorMessages += "<p>The address is required</p>";
+        console.log("Address invalid")
+        } else {
+                validAddress = true;
+                console.log("Address valid")
+        }; 
       
 
     
@@ -94,5 +104,5 @@ function firstName(){
     
 
     //5) return status of each field
-    return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword);
+    return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword && validAddress);
 };
