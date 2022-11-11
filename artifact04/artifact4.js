@@ -17,9 +17,11 @@ function firstName(){
     var validEmail=false;
     var validPhone=false;
     var validUsername=false;
+    var validPassword=false;
   
 
     //2) read value from HTML
+    var errorMessages = "";
     var firstname = document.getElementById("FirstName").value;
     var lastname = document.getElementById("LastName").value;
     var userEmail = document.getElementById("Email").value;
@@ -27,7 +29,8 @@ function firstName(){
     var dotpos = userEmail.lastIndexOf(".");
     var phone = document.getElementById("Phone").value;
     var username = document.getElementById("UserName").value;
-    var errorMessages = "";
+    var password = document.getElementById("Password").value;
+    
 
     //3) Do validation
     if (firstname==="null" || firstname==="" || firstname.length > 20 ) {
@@ -61,19 +64,27 @@ function firstName(){
         };  
   
     if (isNaN(phone) || phone.lenght >15 || phone===null || phone===""){
-        errorMessages += "<p>Invalid Phone number</p>";
+        errorMessages += "<p>Invalid phone number</p>";
         console.log("phone invalid")
         } else {
                 validPhone = true;
                 console.log("Phone valid")
         };  
   
-     if (username==="null" || username==="" || username.length > 12 ) {
-        errorMessages += "<p>The user name is required</p>";
+    if (username==="null" || username==="" || username.length > 12 ) {
+        errorMessages += "<p>The user name is required and cannot be greater than 12 characters</p>";
         console.log("User name invalid")
         } else {
                 validUsername = true;
                 console.log("User name valid")
+        };  
+  
+    if (password==="null" || password==="" || password.length > 7 ) {
+        errorMessages += "<p>The password is required and cannot be greater than 7 characters</p>";
+        console.log("Password invalid")
+        } else {
+                validPassword = true;
+                console.log("Password valid")
         };  
       
 
@@ -83,5 +94,5 @@ function firstName(){
     
 
     //5) return status of each field
-    return (validFirstname && validLastname && validEmail);
+    return (validFirstname && validLastname && validEmail && validPhone && validUsername && validPassword);
 };
