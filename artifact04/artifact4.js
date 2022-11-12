@@ -21,6 +21,7 @@ function validateForm(){
         var phone = document.getElementById("Phone").value;
         var username = document.getElementById("UserName").value;
         var password = document.getElementById("Password").value;
+        var requriedpassword =  /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$@^%&? "])[a-zA-Z0-9!#$@^%&?]/;
         var address = document.getElementById("Address").value;
         var city = document.getElementById("City").value;
         var state = document.getElementById("State").value;
@@ -80,9 +81,12 @@ function validateForm(){
         if (password==="null" || password==="" || password.length > 7 ) {
             errorMessages += "<p>The password is required and cannot be greater than 7 characters</p>";
             console.log("Password invalid")
-            } else {
-                    validPassword = true;
-                    console.log("Password valid")
+            } else if (!requriedpassword.test(password)  ) {
+                    errorMessages += "<p>Password requires 1 upper-case, 1 lower-case, 1 numeric, 1 special character</p>";
+                    console.log("Password invalid — bad characters")
+                } else {
+                        validPassword = true;
+                        console.log("Password valid")                    
             }; 
       
         if (address==="null" || address==="") {
