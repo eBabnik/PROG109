@@ -82,7 +82,7 @@ function validateForm(){
                     console.log("Password valid")
             }; 
       
-        if (address==="null" || address==="" || address.length > 0 ) {
+        if (address==="null" || address==="") {
             errorMessages += "<p>The address is required</p>";
             console.log("Address invalid")
             } else {
@@ -90,7 +90,7 @@ function validateForm(){
                     console.log("Address valid")
             }; 
             
-        if (city==="null" || city==="" || city.length > 0 ) {
+        if (city==="null" || city==="" ) {
             errorMessages += "<p>The city is required</p>";
             console.log("City invalid")
             } else {
@@ -98,7 +98,7 @@ function validateForm(){
                     console.log("City valid")
             }; 
       
-        if (state==="null" || state==="" || state.length > 0 ) {
+        if (state==="null" || state==="") {
             errorMessages += "<p>The State is required</p>";
             console.log("State invalid")
             } else {
@@ -106,7 +106,7 @@ function validateForm(){
                     console.log("State valid")
             }; 
       
-        if (country==="null" || country==="" || country.length > 0 ) {
+        if (country==="null" || country==="") {
             errorMessages += "<p>The country is required</p>";
             console.log("Country invalid")
             } else {
