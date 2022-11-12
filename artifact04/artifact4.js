@@ -58,13 +58,16 @@ function validateForm(){
                     console.log("Email valid")
             };  
       
-        if (isNaN(phone) || phone.lenght >15 || phone===null || phone===""){
-            errorMessages += "<p>Invalid phone number</p>";
-            console.log("phone invalid")
+        if (phone===null || phone==="" || password.length > 15  ){
+            errorMessages += "<p>The phone number is required and cannot be greater than 15 digits </p>";
+            console.log("phone invalid - length")
+             } else if (phone.match("^[0-9 ,-]+$")===null) {
+                errorMessages += "<p>Invalid phone number</p>";
+                console.log("Phone invalid — bad characters")
             } else {
                     validPhone = true;
                     console.log("Phone valid")
-            };  
+            }; 
       
         if (username==="null" || username==="" || username.length > 12 ) {
             errorMessages += "<p>The user name is required and cannot be greater than 12 characters</p>";
