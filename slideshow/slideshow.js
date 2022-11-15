@@ -18,3 +18,10 @@ event.stopPropagation();
     dot.style.top = (event.pageY - 4) + "px";
     document.body.appendChild(dot);
   });
+
+function autoSlide(){
+  if (document.getElementById("auto").checked)
+   next(); 
+  }
+  
+setInterval(autoSlide,2000); // Next  
