@@ -34,9 +34,7 @@ body {
   a {
     outline: thin dotted black;
   }
-  iframe{
-    width: 448;
-    height: 252;
+  iframe{    
     padding:1px;
   }
   
