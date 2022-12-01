@@ -116,9 +116,8 @@ body {
   div#content img.inline {
     display: inline;     
   }
-  div#content iframe.right{
-    float:right;
-    margin-left:1em
+  div#content iframe.paxing{
+    padding:2em;
  
   }  
 
