@@ -116,10 +116,9 @@ body {
   div#content img.inline {
     display: inline;     
   }
-  div#content iframe.paxing{
-    padding:2em;
- 
-  }  
+  div#content source{
+    float:left;
+  }
 
   div#footer {
     padding: 10px;
