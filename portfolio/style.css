@@ -31,6 +31,9 @@ body {
     display: list-item;
     list-style-type: disc;
     }
+.clearfix {
+    overflow: auto;
+}    
   div#wrap {
     border: 5px solid c#FFF9F7;
     margin: auto;
@@ -110,6 +113,15 @@ body {
     float: right;
     margin-left: 1em;
   }
+  div#content img.inline {
+    display: inline;     
+  }
+  div#content iframe.right{
+    float:right;
+    margin-left:1em
+ 
+  }  
+
   div#footer {
     padding: 10px;
     background-color: #34282C;
