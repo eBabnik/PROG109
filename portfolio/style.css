@@ -32,15 +32,18 @@ body {
     list-style-type: disc;
     }
   a {
-    outline: thin dotted black:auto
+    outline: thin dotted black;
   }
-
-  } 
+  iframe{
+    width: 448;
+    height: 252;
+  }
+  
 .clearfix {
     overflow: auto;
 }    
   div#wrap {
-    border: 5px solid c#FFF9F7;
+    border: 5px solid #FFF9F7;
     margin: auto;
     padding: 1em;
     width: 940px;
